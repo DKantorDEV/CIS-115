@@ -17,3 +17,9 @@ x86/
 
 # VS Code (optional)
 .vscode/ipch/
+
+# gitignore
+# Python
+.venv/
+__pycache__/
+*.pyc
