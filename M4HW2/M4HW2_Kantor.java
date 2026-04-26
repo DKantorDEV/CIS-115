@@ -33,11 +33,11 @@ public class M4HW2_Kantor {
         System.out.print("Are you a felon? (true/false): ");
         hasFelony = scanner.nextBoolean();
 
-        if (isCitizen == true) {
+        if (isCitizen) {
             if (daysInCounty >= 30) {
                 if (age >= 18) {
-                    if (onProbation == false) {
-                        if (hasFelony == false) {
+                    if (!onProbation) {
+                        if (!hasFelony) {
                             System.out.println("You are eligible to vote!");
                         } else {
                             System.out.println("You're a felon! Ineligible to vote!");
@@ -46,7 +46,7 @@ public class M4HW2_Kantor {
                         System.out.println("You're on parole, ineligible to vote!");
                     }
                 } else {
-                    System.out.println("You're under 18 and are ineligbile to vote!");
+                    System.out.println("You're under 18 and are ineligible to vote!");
                 }
             } else {
                 System.out.println("Must have lived in the county for over 30 days, you're ineligible.");

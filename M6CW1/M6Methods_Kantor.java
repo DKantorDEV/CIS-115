@@ -14,7 +14,7 @@ class M6CW1_Kantor // Change the LastName to your LastName
         String keep_going = "yes";
         while(keep_going.equalsIgnoreCase("yes"))
         {
-            displayMenu();
+            displayMenu(in);
             System.out.println();
             in.nextLine();
             System.out.println("You have exited the menu!");
@@ -26,7 +26,7 @@ class M6CW1_Kantor // Change the LastName to your LastName
         System.out.println("Program has terminated!");
     }
 
-    public static void displayMenu()
+    public static void displayMenu(Scanner in)
     {
         System.out.println();
         System.out.println("Menu:");
@@ -36,23 +36,22 @@ class M6CW1_Kantor // Change the LastName to your LastName
         System.out.println("3) M6HW3: ");
         System.out.println("4) Exit: ");
         System.out.print( "Selection: " );
-        Scanner in = new Scanner( System.in );
         // change the cases below to better reflect the programs you are running
         switch ( in.nextInt() )
         {
             case 1:
                 getM6HW1();
-                displayMenu(); // be sure to display menu again after you run this method
+                displayMenu(in); // be sure to display menu again after you run this method
                 break;
             case 2:
                 System.out.println("");
                 System.out.println( "You picked M6HW2" );
-                displayMenu(); // be sure to display menu again after you run this method
+                displayMenu(in); // be sure to display menu again after you run this method
                 break;
             case 3:
                 System.out.println("");
                 System.out.println( "You picked M6HW3" );
-                displayMenu(); // be sure to display menu again after you run this method
+                displayMenu(in); // be sure to display menu again after you run this method
                 break;
             case 4:
                 System.out.println("");
@@ -61,10 +60,9 @@ class M6CW1_Kantor // Change the LastName to your LastName
             default:
                 System.out.println("");
                 System.out.println( "Unrecognized option. Try again" );
-                displayMenu(); // be sure to display menu again after you run this method
+                displayMenu(in); // be sure to display menu again after you run this method
                 break;
         }
-        in.close();
     }
 
     // new methods containing the other programs should go here
