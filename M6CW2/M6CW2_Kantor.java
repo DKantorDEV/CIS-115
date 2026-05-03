@@ -31,6 +31,8 @@ public class M6CW2_Kantor {
 
         // Prints the area along with a message
         System.out.println("The area of the rectangle is " + area + ".");
+
+        scanner.close();
     }
 
     // The displayClosing function prints a closing message

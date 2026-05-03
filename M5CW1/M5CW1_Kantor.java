@@ -3,13 +3,9 @@
 // M5CW1
 // This program uses a for loop to add numbers together
 
-import java.util.Scanner;
-
 public class M5CW1_Kantor {
 
     public static void main(String[] args) {
-
-        Scanner scanner = new Scanner(System.in);
 
         // Total tracker outside of for loop
         int total = 0;
@@ -20,10 +16,8 @@ public class M5CW1_Kantor {
         }
 
         String statement = "The sum of the numbers is: " + total;
-        
-        System.out.println(statement);
 
-        scanner.close();
+        System.out.println(statement);
 
     }
 
